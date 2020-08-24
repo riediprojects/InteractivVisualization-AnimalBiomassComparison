@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>iVisPro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link href="animate.css" rel="stylesheet">
+    <script src="wow.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+
+</head>
+<body data-spy="scroll" data-target="#navbar-animal" data-offset="100">
+<!-----NAVBAR----->
+<section class="intro" id="start">
+    <nav id="navbar-animal" class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a></a>
+            <div class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                <div id="nav-icon1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link animated" href="#start">Start</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animated" href="#graph">Show Graph</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animated" href="#footer-adresse">Credits</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" id="intro-text">
+        <div class="row align-items-center">
+            <div class="col-8">
+                <p>&quot;The number of farm animals has been increasing worldwide for decades. Humans are taking more
+                    and more
+                    advantage of animals to use them for their own purposes.
+                    <br>Be it cows to get milk from them, chickens to get their eggs or be it to process them into meat
+                    to eat
+                    them.
+                    These farm animals are almost exclusively kept in factory farms.
+                    Most people are not aware of the incredible suffering we do to these animals every day. And even
+                    less
+                    are most people unaware of the extent of this suffering.
+                    <br>This page wants to illustrate this problem to the visitors, so that people start to think about
+                    this
+                    misery.&quot;</p>
+            </div>
+
+            <div class="col-4">
+                <div class="content animated bounceInRight delay-1s">
+                    <div class="background-pannel">
+                        <div id="test">
+                            <a id="welcome-word">Find out</a>
+                        </div>
+                        <a id="scroll-down-link" href="#introductory-text">
+                            <img id="scroll-down" src="images/intro_content/scroll_down_dark.png" alt="scroll_down">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-----INTRO_SCREEN----->
+
+
+</section>
+
+<section id="introductory-text">
+
+    <div class="d-flex flex-column align-items-center">
+        <div class="p-2"><p>The three bubbles below represent the global biomass of humans, wild animals and farm animals.
+            <br> Guess which bubble represent the Farm Animals! <br> Then click on a bubble if you want to know
+            which bubble it is.</p></div>
+    </div>
+
+</section>
+
+
+<!-----BUBBLE-CHART----->
+<div id="bubbles-enter"></div>
+<section id="graph" >
+
+    <div class="row align-items-center">
+        <div class="col-lg-8">
+            <!--Bubble Chart-->
+            <div id="container" class="svg-container">
+                <svg viewBox="0 0 300 125"></svg>  <!--change svg-->
+                <svg preserveAspectRatio="xMidYMid meet"></svg>
+            </div>
+        </div>
+
+        <!--Bubble Info-->
+        <div class="col-4">
+            <div class="row justify-content-md-center">
+                <div class="value">1961</div>
+            </div>
+            <div class="row justify-content-md-center">
+                <input type="range" min="1961" max="2014" step="1" value="0">
+            </div>
+            <div class="row justify-content-md-center">
+                <h1 id="bubble-animal"></h1>
+            </div>
+            <div class="row justify-content-md-center">
+                <h2 id="value-time"></h2>
+            </div>
+            <div class="row justify-content-md-center" id="biomass-label">
+                <h3>Biomass</h3>
+            </div>
+            <div class="row justify-content-md-center">
+                <p id="bubble-amount"></p>
+                <p id="tonne-amount"> *100K tons</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Bubble Buttons-->
+    <div class="row justify-content-center" id="bubble-buttons">
+        <div class="align-content-lg-center ">
+            <button type="button" class="btn btn-light" id="split">Separate Categories</button>
+        </div>
+        <div class="align-content-lg-center">
+            <button type="button" class="btn btn-light" id="join">Merge Categories</button>
+        </div>
+        <div class="align-content-lg-center">
+            <button type="button" class="btn btn-light" id="detail-farm-animals">Detail Farm Animals</button>
+        </div>
+        <div class="align-content-lg-center">
+            <button type="button" class="btn btn-light" id="summarized-farm-animals">Unit Farm Animals</button>
+        </div>
+        <div class="col-4">
+        </div>
+    </div>
+</section>
+</div>
+
+
+<!--Adresse (footer)-->
+<footer id="footer-adresse">
+    <div>
+        <div>
+            <ul style="list-style: none;" class="list-group list-group-horizontal-sm">
+                <li><p>FHNW</p></li>
+                <li><p>Brugg-Windisch</p></li>
+                <li><p>Manuel Riedi</p></li>
+                <li><p><a id="email-ad" href="">manuel.riedi@students.fhnw.ch</a></p></li>
+            </ul>
+        </div>
+    </div>
+    <div id="copyright">
+        &copy; by M. Riedi
+    </div>
+</footer>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="myJS.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.js"
+        integrity="sha256-j2LsvgOlQFIb2Mphb+tX7d5pNmFdpsJU+s5GNo3z63g=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/d3-simple-slider"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+<script src='bubbles.js'></script>
+
+
+</body>
+</html>
