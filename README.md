@@ -1,5 +1,4 @@
-# Interactiv Visualization Project:
-# Global biomass comparison between farm animals, humans and wild animals
+# Interactiv Visualization Project: Global biomass comparison between farm animals, humans and wild animals
 
 ## Idee
 The population of humans and the number of farm animals continues to grow worldwide inexorably. 
