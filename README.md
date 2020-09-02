@@ -7,6 +7,12 @@ The biomass is calculated per human, asses, buffalo, cattle, goats, horses, mule
 
 ![Screenshot](Screenshot.jpg)
 
+## Technologies
+- JavaScript </br>
+- D3.js </br>
+- HTML </br>
+- CSS </br>
+
 ## Demo Video
 https://youtu.be/AXY6XKsTE5M
 
