@@ -3,18 +3,18 @@
 ## Aim
 The aim is to create an interactive information visualization project based on a large amount of data.
 
+## Technologies
+- JavaScript </br>
+- D3.js </br>
+- HTML </br>
+- CSS </br>
+
 ## Idee
 The population of humans and the number of farm animals continues to grow worldwide inexorably. 
 A statistic will show how much biomass these life forms have together in order to compare them with the biomass of all wild mammals in the world. 
 The biomass is calculated per human, asses, buffalo, cattle, goats, horses, mules, pigs, sheep, turkeys and chicken for each year since 1960. These figures can then with increasing years be compared in detail with the biomass of the wild animals. 
 
 ![Screenshot](Screenshot.jpg)
-
-## Technologies
-- JavaScript </br>
-- D3.js </br>
-- HTML </br>
-- CSS </br>
 
 ## Demo Video
 https://youtu.be/AXY6XKsTE5M
