@@ -1,5 +1,8 @@
 # Interactiv Visualization Project: Global biomass comparison between farm animals, humans and wild animals
 
+## Aim
+The aim is to create an interactive information visualization project based on a large amount of data.
+
 ## Idee
 The population of humans and the number of farm animals continues to grow worldwide inexorably. 
 A statistic will show how much biomass these life forms have together in order to compare them with the biomass of all wild mammals in the world. 
